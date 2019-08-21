@@ -1,0 +1,166 @@
+
+
+/* Reset global */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos globales y predeterminados */
+body{
+    font-family: 'Ubuntu', 'Courier', sans-serif;
+}
+
+#banner-inicial{
+    color: #DFD7A0;
+    background: #2C2C39;
+    /* background-image: url(../imgs/brain-ascii.png); */
+    /* background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-size: fit;
+
+    height: 200px;
+}
+
+#banner-titulo::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0%;
+    vertical-align: middle;
+}
+
+#banner-titulo{
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 99%;
+    height: 100%;
+}
+
+.inicio-seccion{
+    display: block;
+    min-height: 200px;
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+.contenido-bajo{
+    display: flex;
+    padding: 40px;
+}
+
+.seccion-contenido{
+    padding-right: 20px;
+    padding-left: 100px;
+}
+
+.seccion-contenido p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.seccion-contenido p:last-child{
+    margin-bottom: 0;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+}
+
+.inicio-seccion .seccion-img{
+    max-height: 120px;
+}
+
+.inicio-seccion:nth-child(even){
+    color: #ADAA6F;
+    background: #435D4D;
+}
+
+.inicio-seccion:nth-child(odd){
+    color: #435D4D;
+    background: #ADAA6F;
+}
+
+.aplicaciones{
+    width: 50%;
+}
+
+.aplicaciones .aplicaciones-elemento{
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.174);
+}
+
+.aplicaciones .aplicaciones-elemento:last-child{
+    margin-bottom: 0;
+}
+
+.aplicaciones .aplicaciones-elemento *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aplicaciones .aplicaciones-elemento img{
+    width: 50px;
+    opacity: 0.5;
+    margin-right: 15px;
+}
+
+
+#texto-5{
+    overflow: auto;
+}
+
+
+.lista-empresas{
+    list-style: none;
+    align-content: center;
+}
+
+.lista-empresas .empresas-elemento{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.lista-empresas .empresas-elemento img{
+    max-width: 300px;
+    max-height: 150px;
+}
+
+
+#cto-container{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+#hymle-cto{
+    height: 60px;
+    width: 200px;
+    font-size: 1.4rem;
+    font-family: unset;
+    color: #DFD7A0;
+    background: #2C2C39;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 0 gray;
+}
+
+#hymle-cto:active{
+    box-shadow: 0 3px 0 gray;
+    transform: translateY(2px);
+}
+
+
+blink{
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+}
